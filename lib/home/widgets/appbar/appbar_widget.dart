@@ -50,7 +50,7 @@ class AppBarWidget extends PreferredSize {
                   alignment: Alignment(0.0, 1.3),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: ScoreCardWidget(score: user.score),
+                    child: ScoreCardWidget(percent: user.score / 100),
                   ),
                 ),
               ],
