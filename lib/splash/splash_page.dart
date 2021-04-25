@@ -1,11 +1,21 @@
 import 'package:devquiz/core/app_gradients.dart';
 import 'package:devquiz/core/app_images.dart';
+import 'package:devquiz/home/home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Future.delayed(Duration(seconds: 2)).then(
+      (_) => Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (contextC) => HomePage(),
+        ),
+      ),
+    );
+
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
